@@ -44,13 +44,13 @@ public class DevicePagerAdapter extends FragmentPagerAdapter{
         int id = 0;
         switch (i){
             case 0:
-                id = R.drawable.coin;
+                id = R.drawable.lumia;
                 break;
             case 1:
-                id = R.drawable.coin2;
+                id = R.drawable.iphone;
                 break;
             case 2:
-                id = R.drawable.coin3;
+                id = R.drawable.htc;
                 break;
         }
         return id;
