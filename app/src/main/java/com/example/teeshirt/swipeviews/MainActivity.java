@@ -36,7 +36,7 @@ public class MainActivity extends ActionBarActivity {
         // Create the adapter that will return a fragment for each of the three
         // primary sections of the activity.
         //mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
-        devicePagerAdapter = new DevicePagerAdapter(getSupportFragmentManager(), getApplicationContext())
+        devicePagerAdapter = new DevicePagerAdapter(getSupportFragmentManager(), getApplicationContext());
         // Set up the ViewPager with the sections adapter.
         mViewPager = (ViewPager) findViewById(R.id.pager);
         //mViewPager.setAdapter(mSectionsPagerAdapter);
