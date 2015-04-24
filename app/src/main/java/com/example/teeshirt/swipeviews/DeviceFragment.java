@@ -1,5 +1,6 @@
 package com.example.teeshirt.swipeviews;
 
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -17,6 +18,11 @@ public class DeviceFragment extends Fragment{
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_device, container, false);
+
+        TextView textView = (TextView) view.findViewById(R.id.tvDeviceDescription);
+        Typeface typeface = Typeface.createFromAsset(getActivity().getAssets(), "OpenSans-Light.ttf");
+        textView.setTypeface(typeface);
+
 
         Bundle bundle = getArguments();
         if (bundle != null){

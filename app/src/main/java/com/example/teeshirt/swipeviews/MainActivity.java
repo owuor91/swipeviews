@@ -44,10 +44,6 @@ public class MainActivity extends ActionBarActivity {
         //mViewPager.setAdapter(mSectionsPagerAdapter);
         mViewPager.setAdapter(devicePagerAdapter);
 
-        TextView textView = (TextView) findViewById(R.id.tvDeviceDescription);
-        Typeface typeface = Typeface.createFromAsset(getAssets(), "OpenSans-Light.ttf");
-        textView.setTypeface(typeface);
-
     }
 
 
