@@ -1,11 +1,13 @@
 package com.example.teeshirt.swipeviews;
 
+import android.graphics.Typeface;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -41,6 +43,10 @@ public class MainActivity extends ActionBarActivity {
         mViewPager = (ViewPager) findViewById(R.id.pager);
         //mViewPager.setAdapter(mSectionsPagerAdapter);
         mViewPager.setAdapter(devicePagerAdapter);
+
+        TextView textView = (TextView) findViewById(R.id.tvDeviceDescription);
+        Typeface typeface = Typeface.createFromAsset(getAssets(), "OpenSans-Light.ttf");
+        textView.setTypeface(typeface);
 
     }
 
